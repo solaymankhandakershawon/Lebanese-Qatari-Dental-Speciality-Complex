@@ -1,0 +1,6 @@
+{
+  "name": "Gürsel Aksel Stadyumu & Hub Explorer",
+  "description": "Interactive map and local business directory for Gürsel Aksel Stadium in İzmir, featuring venue highlights, rooftop walk, local amenities, and inquiries.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

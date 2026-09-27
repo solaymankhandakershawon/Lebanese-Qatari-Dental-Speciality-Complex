@@ -32,7 +32,7 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen bg-slate-950 text-slate-100 font-sans selection:bg-emerald-500 selection:text-slate-950">
+    <div className="min-h-screen bg-white text-slate-900 font-sans selection:bg-sky-500 selection:text-white">
       {/* Sticky Top Navigation */}
       <DentalNavbar onNavClick={scrollToSection} />
 
@@ -70,22 +70,22 @@ export default function App() {
 
       {/* Floating Action Buttons for Qatar Patients */}
       <div className="fixed bottom-6 right-6 z-30 flex flex-col gap-2.5 items-end">
-        {/* WhatsApp Direct Float */}
+        {/* WhatsApp Direct Float in Sky Blue */}
         <a
           href="https://wa.me/97466810011?text=Hello%20Lebanese%20Qatari%20Dental%20Complex,%20I%20would%20like%20to%20inquire%20about%20an%20appointment"
           target="_blank"
           rel="noopener noreferrer"
-          className="flex items-center gap-2 px-3.5 py-2.5 rounded-full bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold text-xs shadow-2xl transition hover:scale-105 border border-emerald-300"
+          className="flex items-center gap-2 px-3.5 py-2.5 rounded-full bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs shadow-xl shadow-emerald-600/30 transition hover:scale-105 border border-emerald-400"
           title="Chat on WhatsApp"
         >
-          <MessageCircle className="w-4 h-4 fill-slate-950" />
+          <MessageCircle className="w-4 h-4 fill-white" />
           <span className="hidden sm:inline">WhatsApp Us</span>
         </a>
 
-        {/* Direct Call Float */}
+        {/* Direct Call Float in Sky Blue */}
         <a
           href={`tel:${CLINIC_INFO.phone}`}
-          className="p-3 rounded-full bg-slate-900 hover:bg-slate-800 text-emerald-400 border border-slate-700 shadow-xl transition hover:scale-105"
+          className="p-3 rounded-full bg-sky-600 hover:bg-sky-700 text-white border border-sky-400 shadow-xl shadow-sky-600/30 transition hover:scale-105"
           title="Call Clinic"
         >
           <Phone className="w-4 h-4" />
@@ -94,7 +94,7 @@ export default function App() {
         {/* Scroll to Top */}
         <button
           onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-          className="p-2.5 rounded-full bg-slate-950/80 hover:bg-slate-900 text-slate-400 hover:text-white border border-slate-800 shadow-lg transition"
+          className="p-2.5 rounded-full bg-white hover:bg-sky-50 text-slate-600 hover:text-slate-900 border border-sky-200 shadow-md transition"
           title="Scroll to Top"
           aria-label="Scroll to top"
         >
